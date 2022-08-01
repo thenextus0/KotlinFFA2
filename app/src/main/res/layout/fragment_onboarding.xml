@@ -7,92 +7,77 @@
     tools:context=".Onboarding">
 
     <ImageView
-        android:id="@+id/imageViewRectangle"
-        android:layout_width="0dp"
-        android:layout_height="480dp"
-        android:layout_marginBottom="56dp"
-        android:src="@drawable/rectangle"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483"
-        tools:visibility="visible" />
-
-    <ImageView
         android:id="@+id/ImageViewUnion"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:src="@drawable/union"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageViewSketch"
         android:layout_width="0dp"
-        android:layout_height="314dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/group"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewRectangle"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImageViewUnion" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="303dp"
-        android:layout_height="54dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="476dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
         android:gravity="center|top"
         android:text="Join an activity. Start a challenges and follow-up your progress."
-        android:textColor="#787878"
+        android:textColor="#757575"
         android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/ImageViewUnion" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center|top"
-        android:text="Holistic approach"
+        android:text="@string/holistic_approach"
         android:textColor="#111111"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewSketch"
-        app:layout_constraintStart_toStartOf="@+id/imageViewSketch" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSketch" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="350dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="150dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#FF9E9E"
         android:includeFontPadding="false"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="Next"
-        android:textSize="27dp"
-        app:cornerRadius="14dp"
+        android:text="@string/next"
+        android:textSize="16"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:rippleColor="#FFFFFF" />
 
 
